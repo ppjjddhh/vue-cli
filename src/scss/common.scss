@@ -1,0 +1,147 @@
+$color3:#b6b9c2;
+$borderColor4:#eaeaea;
+$bjBaColor:rgba(255,255,255,0.7);
+$errorTipColor:#f75d54;
+$navBorderC:#3096fb;
+@mixin img($img1x:'',$img2x:'',$img3x:''){
+  background-image:url($img2x);
+  background-image:image-set(
+  url($img1x) 1x,
+  url($img2x) 2x,
+  url($img3x) 3x);
+}
+@mixin lineClamp($number:2){
+  -webkit-line-clamp: $number;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: clip;
+  word-break: break-all;
+}
+@mixin nowrap{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@mixin borderR($radius:0.106667rem){
+  border-radius:$radius;
+}
+@mixin center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+@mixin bottoms{
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+}
+@mixin bosShadow{
+  box-shadow: 0px -1px 10px 0px #eaeaea;
+}
+@mixin fixed{
+   position: fixed;
+   width:100%;
+   top:0;
+   left:0;
+   right:0;
+   height:100%;
+}
+@mixin SurplusWidth($Fwidth:100%,$Pwidth:0){
+   width:calc(#{$Fwidth} - #{$Pwidth});
+}
+@mixin SurplusHeight($Fheight:100%,$Pheight:0){
+   height:calc(#{$Fheight} - #{$Pheight});
+}
+@mixin borderBottom1($px:1px,$color:$borderColor4){
+  border-bottom:$px solid $color;
+}
+@mixin borderBottom(){border-bottom:1px solid #f0f0f0};
+@mixin inline-box() {
+
+    display: inline-box;
+}
+
+@mixin box() {
+
+    display: flex;
+    >.block{
+    display:block;
+    }
+}
+
+
+
+@mixin flex-direction() {
+
+    flex-direction: column;
+}
+
+
+@mixin justify-content($name: center) {
+
+    justify-content: $name;
+}
+
+
+@mixin box-align($name: center) {
+
+    align-items: $name;
+}
+
+
+@mixin flex($name: 1) {
+    flex: $name;
+    height:100%;
+}
+@mixin flex1($name: 1) {
+    flex: $name;
+}
+
+
+@mixin btn($width: 8.533333rem, $height: 1.333333rem) {
+    width: $width;
+    height: $height;
+    line-height: $height;
+    color: #fff;
+    border-radius:0.106667rem;
+    text-align: center;
+}
+
+@mixin clom($name:space-between){
+  @include box;
+  @include flex-direction;
+  @include justify-content($name);
+}
+.clom{
+  @include clom(flex-start);
+}
+@mixin clom2{
+  @include clom(flex-start); 
+}
+
+@mixin flex-1{
+    @include flex;
+}
+.flex-1{
+  @include flex;
+}
+@mixin balin($name:center){
+    @include box;
+    @include box-align($name);
+}
+@mixin bpadkJ($name:space-between){
+    @include box;
+    @include justify-content($name);
+    @include box-align;
+}
+@mixin bjc($name:space-between){
+    @include box;
+    @include justify-content($name);
+}
+
+.ellipsis{
+  @include lineClamp
+}

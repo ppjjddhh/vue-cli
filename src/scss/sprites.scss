@@ -1,0 +1,128 @@
+@mixin sprites(){
+  background-image: url(~images/sprite.png);
+  background-size: 4.266667rem 4.04rem;
+  display: block;
+}
+.ico-history{
+  @include sprites;
+  background-position: -2.56rem -2.453333rem;
+  width: 0.586667rem;
+  height: 0.586667rem;
+}
+.router-link-active .ico-history{
+  @include sprites;
+  background-position: -3.66rem 0px;
+  width: 0.586667rem;
+  height: 0.586667rem;
+}
+.ico-service{
+  @include sprites;
+  background-position: -3.66rem -0.64rem;
+  width: 0.586667rem;
+  height: 0.586667rem;
+}
+.router-link-active .ico-service{
+  @include sprites;
+  background-position: -3.66rem -1.28rem;
+  width: 0.586667rem;
+  height: 0.586667rem;
+}
+.ico-personal{
+  @include sprites;
+  background-position: -0.64rem -2.453333rem;
+  width: 0.586667rem;
+  height: 0.586667rem;
+}
+.router-link-active .ico-personal{
+  @include sprites;
+  background-position: 0px -2.453333rem;
+  width: 0.586667rem;
+  height: 0.586667rem;
+}
+.ico-report{
+  @include sprites;
+  background-position: -3.68rem -1.92rem;
+  width: 0.48rem;
+  height: 0.48rem ;
+}
+.ico-expart{
+  @include sprites;
+  background-position: 0px -3.56rem;
+  width: 0.48rem;
+  height: 0.48rem;
+}
+.ico-case{
+  @include sprites;
+  background-position: -1.066667rem -3.56rem;
+  width: 0.48rem;
+  height: 0.48rem
+}
+.ico-convenient{
+  @include sprites;
+  background-position: -0.533333rem -3.56rem;
+  width: 0.48rem;
+  height: 0.48rem;
+}
+.ico-package{
+  @include sprites;
+  background-position: -1.226667rem 0px;
+  width: 1.173333rem;
+  height: 1.173333rem;
+}
+.ico-medicalreport{
+  @include sprites;
+  background-position: -2.453333rem -1.226667rem;
+  width: 1.173333rem;
+  height: 1.173333rem;
+}
+
+.ico-expert{
+  @include sprites;
+  background-position: -1.226667rem -1.226667rem;
+  width: 1.173333rem;
+  height: 1.173333rem;
+}
+.ico-healthPlan{
+  @include sprites;
+  background-position: 0px -1.226667rem;
+  width: 1.173333rem;
+  height: 1.173333rem;
+}
+.ico-medicalYY{
+  @include sprites;
+  background-position: 0 0;
+  width: 1.173333rem;
+  height: 1.173333rem;
+}
+.ico-icon_packag{
+  @include sprites;
+  background-position: -3.68rem -2.453333rem;
+  width: 0.48rem;
+  height: 0.48rem;
+}
+.ico-result{
+  @include sprites;
+  background-position: -1.92rem -2.453333rem;
+  width: 0.586667rem;
+  height: 0.586667rem;
+}
+.ico-guide{
+  @include sprites;
+  background-position: -1.28rem -2.453333rem;
+  width: 0.586667rem;
+  height: 0.586667rem;
+}
+.ico-hot{
+  @include sprites;
+  background-position: 0px -3.093333rem;
+  width: 0.666667rem;
+  height: 0.426667rem;
+}
+.ico-convenientService{
+  @include sprites;
+  background-position: -2.453333rem 0px;
+  width: 1.173333rem;
+  height: 1.173333rem;
+}
+
+
